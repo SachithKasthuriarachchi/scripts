@@ -1,5 +1,5 @@
 # Default ignored files
 /shelf/
 /workspace.xml
-../pipes.json
-../pipes1.txt
+../*.json
+../*.txt
