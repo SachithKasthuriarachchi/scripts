@@ -1,0 +1,12 @@
+[build-options]
+  observabilityIncluded = true
+
+[package]
+  distribution = "2201.3.1"
+  export = ["feb8"]
+  icon = "docs/icon.png"
+  keywords = ["Kind/Sample","Type/RestApi","Category/Service","Internal/http"]
+  name = "feb8"
+  org = "choreopdpe2estage"
+  version = "3.1.0"
+
