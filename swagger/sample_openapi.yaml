@@ -1,0 +1,43 @@
+openapi: 3.0.1
+info:
+  title: /
+  version: 3.1.1
+servers:
+- url: "{server}:{port}/"
+  variables:
+    server:
+      default: http://localhost
+    port:
+      default: "8090"
+paths:
+  /:
+    get:
+      operationId: get
+      parameters:
+      - name: name
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Greeting'
+components:
+  schemas:
+    Greeting:
+      required:
+      - from
+      - message
+      - to
+      type: object
+      properties:
+        from:
+          type: string
+        to:
+          type: string
+        message:
+          type: string
